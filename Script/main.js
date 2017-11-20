@@ -31,12 +31,20 @@ function updateTime() {
 	var jstH = utcH+9
 	
 	//Correct time when over 24h
+	if (cstH > 12){
+		cstH = cstH-12;}
+	
+	if (jstH > 12){
+		jstH = jstH-12;}
+	
+	/*
+	//Correct time when over 24h
 	if (cstH >= 24){
 		cstH = cstH-24;}
 	
 	if (jstH >= 24){
 		jstH = jstH-24;}
-	
+	*/
 	//Output
 	$('#Time').html(hr + ":" + min + ":" + sec);
 	$('#Week').html(day);
