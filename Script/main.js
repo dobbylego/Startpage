@@ -34,6 +34,7 @@ function updateTime() {
 	//Correct time for 12 hour instead of 24
 	if (hr > 12){
 		hrOut = hr-12;}
+	else hrOut = hr;
 	
 	//Correct time when over 24h
 	if (cstH >= 24){
