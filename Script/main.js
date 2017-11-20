@@ -11,6 +11,7 @@ function updateTime() {
 	var hr = leadZero(c.getHours());
 	var min = leadZero(c.getMinutes());
 	var sec = leadZero(c.getSeconds());
+	var hrOut = 0;
 	
 	var dayH = c.getDay();
 	var dateH = c.getDate();
@@ -32,7 +33,7 @@ function updateTime() {
 	
 	//Correct time for 12 hour instead of 24
 	if (hr > 12){
-		hr = hr-12;}
+		hrOut = hr-12;}
 	
 	//Correct time when over 24h
 	if (cstH >= 24){
@@ -42,7 +43,7 @@ function updateTime() {
 		jstH = jstH-24;}
 		
 	//Output
-	$('#Time').html(hr + ":" + min + ":" + sec);
+	$('#Time').html(hrOut + ":" + min + ":" + sec);
 	$('#Week').html(day);
 	$('#Date').html(mon + " " + date + " " + yr);
 	$('#UTC').html(leadZero(utcH) + ":" + min);
