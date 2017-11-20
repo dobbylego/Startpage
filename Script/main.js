@@ -12,6 +12,7 @@ function updateTime() {
 	var min = leadZero(c.getMinutes());
 	var sec = leadZero(c.getSeconds());
 	var hrOut = 0;
+	var hrExt = "am";
 	
 	var dayH = c.getDay();
 	var dateH = c.getDate();
@@ -44,7 +45,7 @@ function updateTime() {
 		jstH = jstH-24;}
 		
 	//Output
-	$('#Time').html(hrOut + ":" + min + ":" + sec);
+	$('#Time').html(hrOut + ":" + min + ":" + sec + ";" + hrExt);
 	$('#Week').html(day);
 	$('#Date').html(mon + " " + date + " " + yr);
 	$('#UTC').html(leadZero(utcH) + ":" + min);
