@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+
+<!-- 
+	Multipurpose aesthetically appealing and partially forked adaptive startpage that displays a lot of useless information
+-->
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="icon" sizes="128x128" href="Images/skruzo.png" />
+	<link href="Stylesheet/style.css" rel="stylesheet" type="text/css" />
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	
+	<title>&lrm;</title>
+
+</head>
+
+<body>
+
+	<div class="BG"></div>
+	
+	<div class="Main-container">
+		
+		<div class="Time-container">
+			<br><br>
+			<p class="TimeHMS" id="Time"></p>
+			<br>
+			<p class="TimeDate" id="Date"></p>
+		</div>
+		
+		<div class="Search-container">
+			<input type="text" autocomplete="off" class="SearchBar" id="Search" spellcheck="false" onfocus="blurBG()" oninput="blurBG()" onblur="unblurBG()" />
+			<span class="Bar"></span>
+		</div>
+		
+		<div class="Link-container">
+			
+			<div class="Category-container" onmouseover="blurBG()" onmouseout="unblurBG()">
+				<img src="Images/c.png" class="Icons"/>
+				<div class="Link-index">
+					<a href="https://www.reddit.com/" class="Link">Frontpage</a>
+					<a href="https://www.reddit.com/r/all" class="Link">r/All</a>
+					<a href="https://www.reddit.com/r/thedickshow" class="Link">r/TheDickShow</a>
+					<a href="https://www.reddit.com/r/titanfall" class="Link">r/Titanfall</a>
+					<a href="https://www.reddit.com/r/guildwars2" class="Link">r/Guildwars2</a>
+					<a href="https://www.reddit.com/r/mechanicalkeyboards" class="Link">r/MK</a>
+					<a href="https://www.reddit.com/r/motorcycles" class="Link">r/Motorcycles</a>
+				</div>
+			</div>
+			<div class="Category-container" onmouseover="blurBG()" onmouseout="unblurBG()">
+				<img src="Images/a.png" class="Icons"/>
+				<div class="Link-index">
+					<a href="https://secure1.inmotionhosting.com/index/login" class="Link">Inmotion</a>
+					<a href="https://www.iplocation.net/" class="Link">IP Location</a>
+					<a href="https://github.com/SKRUZO" class="Link">Github</a>
+					<a href="https://console.aws.amazon.com/console/" class="Link">AWS Console</a>
+					<a href="https://cloud.google.com/vision/" class="Link">Google Vision</a>
+					<a href="http://downdetector.com" class="Link">Downdetector</a>
+				</div>
+			</div>
+			
+			<div class="Category-container" onmouseover="blurBG()" onmouseout="unblurBG()">
+				<img src="Images/b.png" class="Icons"/>
+				<div class="Link-index">
+					<a href="https://www.youtube.com" class="Link">Youtube</a>
+					<a href="https://www.netflix.com" class="Link">Netflix</a>
+					<a href="https://www.amazon.com/Prime-Video/b?node=2676882011" class="Link">Amazon Video</a>
+					<a href="http://www.twitch.tv" class="Link">Twitch</a>
+					<a href="https://xkcd.com/" class="Link">XKCD</a>
+					<a href="http://www.scp-wiki.net" class="Link">SCP Wiki</a>
+					<a href="https://www.patreon.com/thedickshow/posts" class="Link">Dick Show</a>
+				</div>
+			</div>
+			
+			<div class="Category-container" onmouseover="blurBG()" onmouseout="unblurBG()">
+				<img src="Images/d.png" class="Icons"/>
+				<div class="Link-index">
+					<a href="https://www.neogaf.com/forum/forumdisplay.php?f=2" class="Link">NEOGaf</a>
+					<a href="https://news.ycombinator.com/" class="Link">Hacker News</a>
+					<a href="http://www.jemgaming.net/" class="Link">Jemgaming</a>
+					<a href="https://forum.xda-developers.com/" class="Link">XDA Forum</a>
+				</div>
+			</div>
+			
+			<div class="Category-container" onmouseover="blurBG()" onmouseout="unblurBG()">
+				<img src="Images/f.png" class="Icons"/>
+				<div class="Link-index">
+					<a href="https://inbox.google.com" class="Link">Inbox</a>
+					<a href="http://www.olympic.edu" class="Link">Olympic</a>
+					<a href="https://drive.google.com/drive/my-drive" class="Link">Google Drive</a>
+					<a href="https://amazon.com" class="Link">Amazon</a>
+				</div>
+			</div>
+			
+			<div class="Category-container" onmouseover="blurBG()" onmouseout="unblurBG()">
+				<img src="Images/e.png" class="Icons"/>
+				<div class="Link-index">
+					<a href="http://dirpy.com" class="Link">Dirpy</a>
+					<a href="http://youtubeinmp3.com" class="Link">YtiMP3</a>
+					<a href="https://streamable.com/" class="Link">Streamable</a>
+					<a href="hhttps://color.adobe.com/create/color-wheel" class="Link">Color Wheel</a>
+					<a href="http://fontawesome.io/cheatsheet/" class="Link">Font Awesome</a>
+					<a href="http://achecker.ca/checker/index.php" class="Link">Cont. Check</a>
+					<a href="https://alpha.wallhaven.cc/" class="Link">Wallhaven</a>
+				</div>
+			</div>
+		</div>
+	
+	</div>
+
+	<script src="Script/jquery.simpleWeather.min.js"></script>
+	<script src="Script/main.js"></script>
+	<script src="Script/search.js"></script>
+	<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+	
+</body>
