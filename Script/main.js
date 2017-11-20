@@ -44,7 +44,7 @@ function updateTime() {
 	//Output
 	$('#Time').html(hr + ":" + min + ":" + sec);
 	$('#Week').html(day);
-	$('#Date').html(date + " " + mon + " " + yr);
+	$('#Date').html(mon + " " + date + " " + yr);
 	$('#UTC').html(leadZero(utcH) + ":" + min);
 	$('#CST').html(leadZero(cstH) + ":" + min);
 	$('#JST').html(leadZero(jstH) + ":" + min);
