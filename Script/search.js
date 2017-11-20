@@ -16,7 +16,8 @@ function search(query){
 			break;
 
         default:
-            window.location="https://duckduckgo.com/?q=" + query + "&kp=1&kh=1&kg=p&k5=1&kae=d&k1=-1";
+            window.location="https://www.google.com/" + query;
+			// + "&kp=1&kh=1&kg=p&k5=1&kae=d&k1=-1"
     }
 }
 
