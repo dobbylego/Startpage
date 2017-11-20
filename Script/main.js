@@ -31,8 +31,8 @@ function updateTime() {
 	var jstH = utcH+9
 	
 	//Correct time for 12 hour instead of 24
-	if (utcH > 12){
-		utcH = utcH-12;}
+	if (hr > 12){
+		hr = hr-12;}
 	
 	//Correct time when over 24h
 	if (cstH >= 24){
