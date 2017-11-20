@@ -16,7 +16,7 @@ function search(query){
 			break;
 
         default:
-            window.location="https://www.google.com/" + query;
+            window.location="http://www.google.com/search?q=" + query;
 			// + "&kp=1&kh=1&kg=p&k5=1&kae=d&k1=-1"
     }
 }
