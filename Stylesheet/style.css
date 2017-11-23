@@ -124,21 +124,21 @@
 /* --------Content Element Styles-------- */
 
 .TimeHMS {
-	margin: 2vh auto -7vh auto;
-	font-size: 5vh;
+	margin: 5px;
+	font-size: 8vh;
 	font-family: Baksheesh;
 	color: rgba(255, 255, 255, 1);
 }
 
 .TimeWeek {
-	margin: 0 auto 0 auto;
-	font-size: 16vh;
-	font-family: OlmpicBranding;
-	color: rgba(255, 255, 255, 0.75);
+	margin: 0px;
+	font-size: 4vh;
+	font-family: Baksheesh;
+	color: rgba(255, 255, 255, 1);
 }
 
 .TimeDate {
-	margin: -6vh auto 2vh auto;
+	margin: 0px;
 	font-size: 4vh;
 	font-family: Baksheesh;
 	color: rgba(255, 255, 255, 1);

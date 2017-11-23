@@ -38,6 +38,10 @@ function updateTime() {
 		hrOut = hr-12;
 		hrExt = "pm";
 	}
+	else if (hr == 0){
+		hrOut = 12;
+		hrExt = "am";
+	}
 	else
 	{
 		hrOut = hr;
